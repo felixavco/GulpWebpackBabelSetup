@@ -1,0 +1,12 @@
+body {
+  padding-top: 10rem;
+  background: #00ffff;
+  text-align: center;
+  font-size: 3rem;
+  color: $bgColor;
+  transition: all 500ms linear;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $color2;
+  padding: 3px;
+}
