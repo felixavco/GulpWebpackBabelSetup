@@ -13,12 +13,15 @@ const
 
     gulp.watch(['./src/assets/sass/*.scss','./src/assets/sass/***/*.scss'],['cssInject']);
     gulp.watch(['./src/**/*.html', './src/**/*.php'], () => browerSync.reload())
+    gulp.watch(['./src/assets/js/**/*.js'], ['scriptsRefresh'])
   })
 
   gulp.task('cssInject', ['sass'], () => {
     return gulp.src('./src/style.css')
       .pipe(browerSync.stream())
   })
+
+  gulp.task('scriptsRefresh', ['scripts'], () => browerSync.reload())
 
  
 
