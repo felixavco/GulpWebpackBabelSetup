@@ -4,7 +4,7 @@ const
   autoprefixer = require('gulp-autoprefixer');
 
   gulp.task('sass', () => {
-    return gulp.src('./src/assets/sass/style.scss')
+    return gulp.src('./src/assets/sass/*.scss')
     .pipe(sass({
       outputStyle: 'compressed',
     }).on('error', sass.logError))
